@@ -35,8 +35,8 @@ def getRandomPosition(position):
     lat = position['lat']
     accuracy_lng = round(lng, 4) # 10 米精度
     accuracy_lat = round(lat, 4) # 10 米精度
-    R = getRandom_2(accuracy_lng, 0.000025) # 5米宿舍
-    Q = getRandom_2(accuracy_lat, 0.000025) # 5米宿舍
+    R = getRandom_2(accuracy_lng, 0.000155) # 5米宿舍
+    Q = getRandom_2(accuracy_lat, 0.000155) # 5米宿舍
     lng = round(R, 6) # 使用六个小数位
     lat = round(Q, 6) # 使用六个小数位
     position['Q'] = Q
